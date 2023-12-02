@@ -20,6 +20,35 @@ body{
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
+
+.btn-contact button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #7B2CBF;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #7a2cbf;
+    transform: scale(1.05);
+}
+
+h2.title{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.title span{
+    color: #7a2cbf;
+}
 /* Header Style */
 
 header{
@@ -53,18 +82,181 @@ header nav ul li{
     padding: 0 40px;
 } 
 
-header .btn-contact button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #7B2CBF;
-    border: 0;
-    border-radius: 30px;
+/* style of the top*/
+
+section.top-of-site{
+    padding: 40px 4%;
+}
+
+section.top-of-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px; /* Da uma distância entre os elementos*/
+}
+
+.top-of-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.top-of-site .txt-top-of-site h1 span{
+    color: #7a2cbf;
+    font-size: 70px;
+}
+
+.top-of-site .txt-top-of-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.top-of-site .img-top-of-site img{
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    box-shadow: rgba(122, 44, 191, 0.4) 0px 5px,rgba(122, 44, 191, 0.3) 0px 10px,rgba(122, 44, 191, 0.2) 0px 15px,rgba(122, 44, 191, 0.1) 0px 20px,rgba(122, 44, 191, 0.05) 0px 25px;
+    border: 2px solid #7a2cbf ;
+}
+
+@keyframes float{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Style of specialties */
+
+section.specialties{
+    padding: 40px 4%;
+}
+
+section.specialties .flex{
+    gap: 60px;
+}
+
+.specialties .specialties-box{
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.specialties .specialties-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff79;
+}
+
+.specialties .specialties-box i{
+    font-size: 70px;
+    color: #7a2cbf;
+}
+
+.specialties .specialties-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* Style About */
+
+section.about{
+    padding: 80px 4%;
+}
+
+section.about .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.about .txt-about{
+    color: #fff;
+}
+
+.about .txt-about h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.about .txt-about span{
+    color: #7a2cbf;
+    display: block;
+}
+
+.about .txt-about p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.about .txt-about .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7a2cbf;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.img-about img{
+    width: 32rem;
+    height: 40rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #7a2cbf;
+}
+
+/* Portfolio Style */
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff18;
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    border-radius: 48px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
     cursor: pointer;
 }
 
-header .btn-contact button:hover{
-    box-shadow: 0px 0px 8px #7a2cbf;
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
 }
 
-/* MAIN STYLE */
+.overlay:hover{
+    opacity: 1;
+}
