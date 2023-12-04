@@ -6,4 +6,4 @@
  
  If any of the projects presented pique your interest or if you would like to discuss possible collaborations, please feel free to get in touch via the **email** provided in the footer of this website.
 
- WebSite: **https://muriloluix.github.io/Portfolio/**
+ **WebSite:** **https://muriloluix.github.io/Portfolio/**
