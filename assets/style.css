@@ -408,6 +408,14 @@ section.certificates{
     box-shadow: 0 0 40px 10px #ffffff18;
 }
 
+.flex__{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
 .img-general {
     width: 360px;
     height: 280px;
@@ -526,10 +534,6 @@ footer .line-footer p a{
     }
 
     /* Style Certificates */
-
-    .flex__2{
-        flex-direction: column;
-    }
 
     .img-general {
         width: 360px;
