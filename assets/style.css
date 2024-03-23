@@ -313,6 +313,7 @@ section.portfolio{
 }
 
 section.portfolio .flex{
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 60px;
 }
@@ -325,6 +326,7 @@ section.portfolio .flex{
     transition: 8s;
     border-radius: 48px;
     position: relative;
+    margin-top: 4%;
 }
 
 .img-port:hover{
@@ -408,12 +410,19 @@ section.certificates{
     box-shadow: 0 0 40px 10px #ffffff18;
 }
 
-.flex__{
+.flex {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
 }
 
 .img-general {
@@ -425,32 +434,15 @@ section.certificates{
     transition: 2s;
     border-radius: 48px;
     position: relative;
-    margin: 6em 4em;
+    margin: 0 1em;
 }
-    
+
 .img-general:hover {
     cursor: pointer;
     transform: scale(1.5);
     box-shadow: 0 0 40px 2px #7a2cbf;
 }
 
-.img-general2 {
-    width: 314px;
-    height: 280px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 2s;
-    border-radius: 48px;
-    position: relative;
-    margin: 6em 3em;
-}
-    
-.img-general2:hover {
-    cursor: pointer;
-    transform: scale(1.5);
-    box-shadow: 0 0 40px 2px #7a2cbf;
-}
     
 
 /* STYLE FOOTER */
