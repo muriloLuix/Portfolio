@@ -410,14 +410,11 @@ section.certificates{
     box-shadow: 0 0 40px 10px #ffffff18;
 }
 
-.flex {
+.flexCertif{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
-    flex-direction: column;
 }
-
 .row {
     display: flex;
     align-items: center;
@@ -510,6 +507,18 @@ footer .line-footer p a{
 
     section.specialties{
         padding: 40px 8%;
+    }
+
+    .row {
+        flex-direction: column; 
+        margin-bottom: 1em; 
+    }
+    
+    .img-general {
+        width: 100%; 
+        max-width: none;
+        margin: 0; 
+        margin-bottom: 1em; 
     }
 
     /* Style About */
