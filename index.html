@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <!-- Bootstrap icons final -->
     <link rel="stylesheet" href="assets/style.css">
-    <script src="menu.js" defer></script>
+    <script src="assets/js/menu.js" defer></script>
+    <script src="assets/js/form.js" defer></script>
     <link rel="shortcut icon" href="imgs/favicon-32x32.png" type="image/x-icon">
     <title>Murilo's | Portfolio</title>
 </head>
@@ -228,14 +229,10 @@
         <section class="form" id="form-menu">
             <div class="interface">
                 <h2 class="title">TALK WITH <span>ME.</span></h2>
-                <a href="obrigado.html">
-                    <form id="contact-form" action="assets/php/process.php" method="POST">
-
-                </a>
+                <form id="contact-form" action="enviar_email.php" method="POST">
                     <input type="text" name="name" id="name" placeholder="Your name:" required>
                     <input type="email" name="email" id="email" placeholder="Your e-mail:" required>
                     <input type="text" name="phone" id="phone" placeholder="Your smartphone:">
-                    <input type="hidden" name="_captcha" value="false">
                     <textarea name="message" id="message" placeholder="Your message" required></textarea>
                     <div class="btn-submit">
                         <input type="submit" value="SEND">
