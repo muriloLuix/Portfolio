@@ -13,6 +13,7 @@
     <!-- Bootstrap icons final -->
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/js/menu.js" defer></script>
+    <script src="assets/js/fone.js" defer></script>
     <link rel="shortcut icon" href="imgs/favicon-32x32.png" type="image/x-icon">
     <title>Murilo's | Portfolio</title>
 </head>
@@ -231,7 +232,7 @@
                 <form id="contact-form" action="" method="POST">
                     <input type="text" name="name" id="name" placeholder="Your name:" required>
                     <input type="email" name="email" id="email" placeholder="Your e-mail:" required>
-                    <input type="text" name="phone" id="phone" placeholder="Your smartphone:">
+                    <input type="tel" name="phone" id="telefone" placeholder="Your smartphone:" maxlength="15">
                     <textarea name="message" id="message" placeholder="Your message" required></textarea>
                     <div class="btn-submit">
                         <input type="submit" value="SEND">
