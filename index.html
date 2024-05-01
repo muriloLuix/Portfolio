@@ -230,20 +230,24 @@
                 </div>
             </div>
         </section><!--certificates-->
+    
         <section class="form" id="form-menu">
             <div class="interface">
                 <h2 class="title">FALE <span>COMIGO.</span></h2>
-                <form id="contact-form" action="" method="POST">
+                <form id="contact-form" action="assets/php/processa_formulario.php" method="POST">
                     <input type="text" name="name" id="name" placeholder="Seu nome:" required>
                     <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
                     <input type="tel" name="phone" id="telefone" placeholder="Seu celular:" maxlength="15">
                     <textarea name="message" id="message" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-submit">
-                        <input type="submit" value="SEND">
+                        <input type="submit" value="ENVIAR">
                     </div>
+                    <div id="form-messages"></div> <!-- Para exibir mensagens de sucesso/erro -->
                 </form>
             </div><!--interface-->
         </section><!--form-->
+        
+        
     </main>
     
     <footer>
