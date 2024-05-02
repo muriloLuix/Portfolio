@@ -440,6 +440,27 @@ section.certificates{
     box-shadow: 0 0 40px 2px #7a2cbf;
 }
 
+.imgLanguages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4%;
+}
+
+.imgLanguages img {
+    width: 12rem;
+    height: auto;
+    margin: 2%;
+    transition: all .3s ease;
+}
+
+
+.imgLanguages img:hover{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
     
 
 /* STYLE FOOTER */
@@ -583,5 +604,9 @@ footer .line-footer p a{
     /* Style Mobile */
     .btn-open-menu{
         display: block;
+    }
+
+    .imgLanguages{
+        flex-direction: column;
     }
 }
